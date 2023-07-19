@@ -88,72 +88,72 @@ def EigenSumCheck(N): #Check to level 4000 complete
     kmax=2 #these are the highest k-values that need to be checked for a given level, note that these values are one higher than the table, because the table is computing the difference between a2(k) and a2(k+1)
     if 0<N<178: #I know there's a better implementation for this, but this works
         kmax=718
-    elif 177<N<316:
+    elif 177<N<317:
         kmax=400
-    elif 315<N<714:
+    elif 316<N<714:
         kmax=300
-    elif 713<N<2871:
+    elif 713<N<2872:
         kmax=200
-    elif 2870<N<5119:
+    elif 2871<N<5120:
         kmax=100
-    elif 5118<N<11564:
+    elif 5119<N<11567:
         kmax=75
-    elif 11563<N<18104:
+    elif 11566<N<18107:
         kmax=50
-    elif 18103<N<32235:
+    elif 18106<N<32241:
         kmax=40
-    elif 32234<N<46425:
+    elif 32240<N<46432:
         kmax=30
-    elif 46424<N<50370:
+    elif 46431<N<50370:
         kmax=25
-    elif 50369<N<54837:
+    elif 50369<N<54845:
         kmax=24
-    elif 54836<N<59922:
+    elif 54844<N<59931:
         kmax=23
-    elif 59921<N<65745:
+    elif 59930<N<65754:
         kmax=22
-    elif 65744<N<72453:
+    elif 65753<N<72463:
         kmax=21
-    elif 72452<N<80237:
+    elif 72462<N<80248:
         kmax=20
-    elif 80236<N<89338:
+    elif 80247<N<89349:
         kmax=19
-    elif 89337<N<100068:
+    elif 89348<N<100081:
         kmax=18
-    elif 100067<N<112840:
+    elif 100080<N<112854:
         kmax=17
-    elif 112839<N<128205:
+    elif 112853<N<128220:
         kmax=16
-    elif 128204<N<146910:
+    elif 128219<N<146927:
         kmax=15
-    elif 146909<N<169998:
+    elif 146926<N<170016:
         kmax=14
-    elif 169997<N<198947:
+    elif 170015<N<198967:
         kmax=13
-    elif 198946<N<235922:
+    elif 198966<N<235945:
         kmax=12
-    elif 235921<N<284197:
+    elif 235944<N<284223:
         kmax=11
-    elif 284196<N<348923:
+    elif 284222<N<348954:
         kmax=10
-    elif 2<N<2:
+    elif 348953<N<438657:
         kmax=9
-    elif 2<N<2:
+    elif 438657<N<568321:
         kmax=8
-    elif 2<N<2:
+    elif 568320<N<766452:
         kmax=7
-    elif 2<N<2:
+    elif 766451<N<1093055:
         kmax=6
-    elif 2<N<2:
+    elif 1093054<N<1692448:
         kmax=5
-    elif 2<N<2:
+    elif 1692447<N<2981763:
         kmax=4
-    elif 2<N<2:
+    elif 2981762<N<6532965:
         kmax=3
     a2List=[]
     Output=[]
     check=0
-    if N>1185712:
+    if N>21595264:
         Output.append(('Check','unnecessary'))
         return(Output)
     GammaN=Gamma0(N)
